@@ -1,1 +1,33 @@
 ## This is a markdown file
+
+##This shows how assign used for variable assignment
+```{r}
+x<- 5
+x
+y <- 1:10
+y
+print(x)
+msg<-"Hello World"
+print(msg)
+
+```
+```{r}
+x <- c(1.7, "a")
+x
+y <- c(TRUE, 2, 3, FALSE)
+y
+
+  
+
+```
+
+
+```{r}
+x <- list(1, "a", TRUE, 1 + 4i)
+x
+```
+```{r}
+m <- matrix(1:6,nrow = 2, ncol = 3)
+m
+```
+
