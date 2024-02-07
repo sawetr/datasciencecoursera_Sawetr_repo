@@ -33,3 +33,42 @@ y <- 1:10
 y
 ```
 
+```{r}
+x<-c(1,NA,3,4) #Na is not defined
+is.na(x)
+```
+
+```{r}
+# request sample of dataframes
+head(mtcars)
+#what this syntax did was to request the first 6 rows of the mtcars dataset
+# i want the simple data frame to assign to a variable
+df <- mtcars
+df
+# i want to see the structure of the data frame
+str(df)
+# i want to see the summary of the data frame
+summary(df)
+# i want to see the first 6 rows of the data frame
+head(df)
+# i want to see the last 6 rows of the data frame
+tail(df)
+```
+
+```{r}
+# request the syntax for read the file
+x <- read.csv("mtcars.csv")
+x
+
+```
+
+```{r}
+vec <- c(1,2,3,4,5,6,7,8,9,10)
+dput(vec)
+x <- 1:5
+y <- rnorm(5)
+dump(c("x", "y"), file="mydata.R")
+source("mydata.R")
+```
+
+```{r}
